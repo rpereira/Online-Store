@@ -1,3 +1,32 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+
+.btn:active,.btn:focus,a:active,a:focus{outline: 0}
+.hero-spacer {margin-top: 50px}
+.hero-feature{margin-bottom: 30px}
+
+body
+{
+    color:      #333;
+    background: #f1f1f1;
+    margin:     0;
+
+    font-size: 13px;
+    line-height: 1.42857143;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container
+{
+    padding-top: 20px;
+    background:  #fff;
+}
+
+/**
+ * Header
+ */
 header
 {
     padding-top: 10px;
@@ -23,11 +52,45 @@ header .logo span
     font-size: 35px;
 }
 
-section
+/**
+ * Navbar
+ */
+.navbar-custom
 {
-    margin: 50px 0;
+    background-color: #4a4a4a;
+    border-color:     #101010;
+
+    margin-bottom: 0;
 }
 
+.navbar li a
+{
+    font-size:      17px;
+    color:          #fff !important;
+    text-transform: uppercase;
+    font-family:    'Open Sans Condensed', sans-serif;
+
+        -ms-transition: all 100ms ease-in-out 0s;
+       -moz-transition: all 100ms ease-in-out 0s;
+    -webkit-transition: all 100ms ease-in-out 0s;
+         -o-transition: all 100ms ease-in-out 0s;
+            transition: all 100ms ease-in-out 0s;
+}
+
+.navbar li a:hover,
+.navbar li a.active
+{
+    background-color: #428bca !important;
+}
+
+section
+{
+    margin-bottom: 20px;
+}
+
+/**
+ * Footer
+ */
 footer
 {
     padding: 60px 0;
@@ -42,17 +105,25 @@ footer
 
 span.title
 {
-    display: block;
-    font-size: 20px;
-    border-bottom: 3px solid #eee;
+    display:        block;
+    font-size:      23px;
+    border-bottom:  3px solid #eee;
     padding-bottom: 8px;
-    margin-bottom: 20px;
-    font-family: 'open_sanscondensed_light';
-    font-size: 22px;
-    color: #4c7ed3;
+    margin-bottom:  20px;
+    color:          #4c7ed3;
+    font-family:    'Open Sans Condensed', sans-serif;
 }
 
 .hero-feature
 {
     margin-bottom: 30px;
+}
+
+.list-group a
+{
+        -ms-transition: all 100ms ease-in-out 0s;
+       -moz-transition: all 100ms ease-in-out 0s;
+    -webkit-transition: all 100ms ease-in-out 0s;
+         -o-transition: all 100ms ease-in-out 0s;
+            transition: all 100ms ease-in-out 0s;
 }
