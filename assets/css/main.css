@@ -1,0 +1,58 @@
+header
+{
+    padding-top: 10px;
+    background: #f1f1f1;
+}
+
+header .well
+{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+    padding-top: 20px;
+    border: 0;
+    background: transparent;
+}
+
+header .logo span
+{
+    color: #333;
+    font-size: 35px;
+}
+
+section
+{
+    margin: 50px 0;
+}
+
+footer
+{
+    padding: 60px 0;
+
+    color:            #aaa;
+    background-color: #25221e;
+}
+
+
+
+/*    */
+
+span.title
+{
+    display: block;
+    font-size: 20px;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-family: 'open_sanscondensed_light';
+    font-size: 22px;
+    color: #4c7ed3;
+}
+
+.hero-feature
+{
+    margin-bottom: 30px;
+}
