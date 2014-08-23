@@ -121,9 +121,16 @@ span.title
 
 .list-group a
 {
+    background: #fbfbfb;
+
         -ms-transition: all 100ms ease-in-out 0s;
        -moz-transition: all 100ms ease-in-out 0s;
     -webkit-transition: all 100ms ease-in-out 0s;
          -o-transition: all 100ms ease-in-out 0s;
             transition: all 100ms ease-in-out 0s;
+}
+
+#products-carousel
+{
+    height: 356px;
 }
