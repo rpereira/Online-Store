@@ -1,0 +1,158 @@
+<!-- carousel -->
+<section class="row">
+    <div class="col-lg-9 col-md-12">
+        <div id="products-carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#products-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#products-carousel" data-slide-to="1"></li>
+                <li data-target="#products-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="/src/assets/img/amendoa.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <h3>Amêndoa</h3>
+                        <p>bla bla bla</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/src/assets/img/fumeiro.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <h3>Fumeiro</h3>
+                        <p>bla bla bla</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/src/assets/img/produtos.jpg" alt="...">
+                    <div class="carousel-caption">
+                        <h3>bla</h3>
+                        <p>bla bla bla</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#products-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#products-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-lg-3 visible-lg">BLA BLA BLA</div>
+</section>
+<!-- /.carousel -->
+
+<section class="row">
+    <!-- left side -->
+    <div class="col-lg-3 col-md-3 col-sm-12">
+
+        <!-- Categories -->
+        <div class="col-lg-12 col-md-12 col-sm-6">
+            <div class="no-padding">
+                <span class="title">CATEGORIES</span>
+            </div>
+            <div class="list-group">
+                <a href="catalogue.html" class="list-group-item"
+                   data-ng-repeat="category in categories">{{ category }}</a>
+            </div>
+        </div>
+        <!-- End Categories -->
+
+        <!-- Best Seller -->
+        <div class="col-lg-12 col-md-12 col-sm-6">
+            <div class="no-padding">
+                <span class="title">BEST SELLER</span>
+            </div>
+            <div class="hero-feature">
+                <div class="thumbnail text-center">
+                    <a href="detail.html" class="link-p">
+                        <img src="images/product-8.jpg" alt="" class="">
+                    </a>
+                    <div class="caption prod-caption">
+                        <h4><a href="detail.html">Vinho Cistus</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Ver página revendedor</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-feature hidden-sm">
+                <div class="thumbnail text-center">
+                    <a href="detail.html" class="link-p">
+                        <img src="images/product-9.jpg" alt="" class="">
+                    </a>
+                    <div class="caption prod-caption">
+                        <h4><a href="detail.html">Amêndoa</a></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Ver página revendedor</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Best Seller -->
+    </div>
+    <!-- /.left side -->
+
+    <div class="clearfix visible-sm"></div>
+
+    <!-- right side -->
+    <!-- Featured -->
+    <div class="col-lg-9 col-md-9 col-sm-12">
+        <div class="col-lg-12 col-sm-12">
+            <span class="title">FEATURED PRODUCTS</span>
+        </div>
+        <div class="col-lg-4 col-sm-4 hero-feature text-center">
+            <div class="thumbnail">
+                <a href="detail.html" class="link-p">
+                    <img src="images/product-2.jpg" alt="" class="">
+                </a>
+                <div class="caption prod-caption">
+                    <h4><a href="detail.html">Age Of Wisdom Tan Graphic Tee</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p>
+                    <p>
+                        <a href="#" class="btn btn-primary">Ver página revendedor</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 hero-feature text-center">
+            <div class="thumbnail">
+                <a href="detail.html" class="link-p">
+                    <img src="images/product-3.jpg" alt="" class="">
+                </a>
+                <div class="caption prod-caption">
+                    <h4><a href="detail.html">Classic Laundry Green Graphic T-Shirt</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p>
+                    <p>
+                        <a href="#" class="btn btn-primary">Ver página revendedor</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 hero-feature text-center">
+            <div class="thumbnail">
+                <a href="detail.html" class="link-p">
+                    <img src="images/product-4.jpg" alt="" class="">
+                </a>
+                <div class="caption prod-caption">
+                    <h4><a href="detail.html">Disc Jockey Print T-Shirt</a></h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p>
+                    <p>
+                        <a href="#" class="btn btn-primary">Ver página revendedor</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Featured -->
+    <!-- /.right side -->
+</section>
