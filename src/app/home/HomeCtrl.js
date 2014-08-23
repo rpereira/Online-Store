@@ -4,9 +4,12 @@
 angular.module("OnlineStore")
 
 .controller("HomeCtrl",
-            ["$scope",
-            function($scope)
+            ["$scope", "PRODUCT_CATEGORIES", "PRODUCTS",
+            function($scope, PRODUCT_CATEGORIES, PRODUCTS)
             {
-                $scope.categories = ["ola", "ole", "oli"];
+                $scope.categories = PRODUCT_CATEGORIES;
+                $scope.products   = PRODUCTS;
+
+                $scope.predicate = "";
             }
 ]);

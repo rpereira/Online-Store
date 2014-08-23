@@ -53,52 +53,17 @@
     <div class="col-lg-3 col-md-3 col-sm-12">
 
         <!-- Categories -->
-        <div class="col-lg-12 col-md-12 col-sm-6">
+        <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="no-padding">
                 <span class="title">CATEGORIES</span>
             </div>
             <div class="list-group">
-                <a href="catalogue.html" class="list-group-item"
-                   data-ng-repeat="category in categories">{{ category }}</a>
+                <a href class="list-group-item"
+                   data-ng-repeat="category in categories"
+                   data-ng-click="predicate = {{ category }}">{{ category }}</a>
             </div>
         </div>
         <!-- End Categories -->
-
-        <!-- Best Seller -->
-        <div class="col-lg-12 col-md-12 col-sm-6">
-            <div class="no-padding">
-                <span class="title">BEST SELLER</span>
-            </div>
-            <div class="hero-feature">
-                <div class="thumbnail text-center">
-                    <a href="detail.html" class="link-p">
-                        <img src="images/product-8.jpg" alt="" class="">
-                    </a>
-                    <div class="caption prod-caption">
-                        <h4><a href="detail.html">Vinho Cistus</a></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Ver página revendedor</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-feature hidden-sm">
-                <div class="thumbnail text-center">
-                    <a href="detail.html" class="link-p">
-                        <img src="images/product-9.jpg" alt="" class="">
-                    </a>
-                    <div class="caption prod-caption">
-                        <h4><a href="detail.html">Amêndoa</a></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Ver página revendedor</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Best Seller -->
     </div>
     <!-- /.left side -->
 
@@ -110,48 +75,23 @@
         <div class="col-lg-12 col-sm-12">
             <span class="title">FEATURED PRODUCTS</span>
         </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
+        <!-- product to repeat -->
+        <div class="col-lg-4 col-sm-4 hero-feature text-center"
+             data-ng-repeat="product in products | filterBy : predicate">
             <div class="thumbnail">
                 <a href="detail.html" class="link-p">
                     <img src="images/product-2.jpg" alt="" class="">
                 </a>
                 <div class="caption prod-caption">
-                    <h4><a href="detail.html">Age Of Wisdom Tan Graphic Tee</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p>
+                    <h4><a href="detail.html">{{ product.name }}</a></h4>
+                    <p>{{ product.description }}</p>
                     <p>
                         <a href="#" class="btn btn-primary">Ver página revendedor</a>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-            <div class="thumbnail">
-                <a href="detail.html" class="link-p">
-                    <img src="images/product-3.jpg" alt="" class="">
-                </a>
-                <div class="caption prod-caption">
-                    <h4><a href="detail.html">Classic Laundry Green Graphic T-Shirt</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">Ver página revendedor</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-4 hero-feature text-center">
-            <div class="thumbnail">
-                <a href="detail.html" class="link-p">
-                    <img src="images/product-4.jpg" alt="" class="">
-                </a>
-                <div class="caption prod-caption">
-                    <h4><a href="detail.html">Disc Jockey Print T-Shirt</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">Ver página revendedor</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+        <!-- /.product to repeat -->
     </div>
     <!-- End Featured -->
     <!-- /.right side -->
