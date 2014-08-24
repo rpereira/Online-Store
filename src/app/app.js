@@ -24,11 +24,26 @@ angular.module("OnlineStore", ["ngRoute"])
  */
 .constant("PRODUCT_CATEGORIES",
     [
-        "All products",
-        "Wines",
-        "Olive Oil",
-        "Cheese",
-        "Bread"
+        {
+            name : "All products",
+            id   : ''
+        },
+        {
+            name : "Wines",
+            id   : 'wine'
+        },
+        {
+            name : "Olive Oil",
+            id   : 'olive_oil'
+        },
+        {
+            name : "Cheese",
+            id   : 'cheese'
+        },
+        {
+            name : "Bread",
+            id   : 'bread'
+        }
     ]
 )
 
