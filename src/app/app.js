@@ -43,6 +43,10 @@ angular.module("OnlineStore", ["ngRoute"])
         {
             name : "Bread",
             id   : 'bread'
+        },
+        {
+            name : "Fumeiro",
+            id   : 'fumeiro'
         }
     ]
 )
@@ -76,6 +80,64 @@ angular.module("OnlineStore", ["ngRoute"])
     {
         category    : "olive_oil",
         name        : "Olive Oil",
+        description : "bla bla bla",
+        retailer    : "Arte Sabor e Douro"
+    },
+
+    /* CHEESE */
+    {
+        category    : "cheese",
+        name        : "Queijo de Cabra",
+        description : "bla bla bla",
+        retailer    : "Bazar Regional"
+    },
+    {
+        category    : "cheese",
+        name        : "Queijo de Cabra Curado",
+        description : "bla bla bla",
+        retailer    : "Bazar Regional"
+    },
+    {
+        category    : "cheese",
+        name        : "Queijo de Ovelha",
+        description : "bla bla bla",
+        retailer    : "Bazar Regional"
+    },
+    {
+        category    : "cheese",
+        name        : "Queijo de Ovelha Curado",
+        description : "bla bla bla",
+        retailer    : "Bazar Regional"
+    },
+
+    /* FUMEIRO */
+    {
+        category    : "fumeiro",
+        name        : "Alheira",
+        description : "bla bla bla",
+        retailer    : "Bazar Regional"
+    },
+    {
+        category    : "fumeiro",
+        name        : "Alheira Salpicão",
+        description : "bla bla bla",
+        retailer    : "Arte Sabor e Douro"
+    },
+    {
+        category    : "fumeiro",
+        name        : "Alheira Bacalhau",
+        description : "bla bla bla",
+        retailer    : "Arte Sabor e Douro"
+    },
+    {
+        category    : "fumeiro",
+        name        : "Presunto",
+        description : "bla bla bla",
+        retailer    : "Arte Sabor e Douro"
+    },
+    {
+        category    : "fumeiro",
+        name        : "Presunto Curado",
         description : "bla bla bla",
         retailer    : "Arte Sabor e Douro"
     }
