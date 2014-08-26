@@ -24,6 +24,7 @@ body
     background:  #fff;
 }
 
+
 /**
  * Header
  */
@@ -51,6 +52,7 @@ header .logo span
     color: #333;
     font-size: 35px;
 }
+
 
 /**
  * Navbar
@@ -96,13 +98,27 @@ section
     margin-bottom: 20px;
 }
 
+
 /**
- * Thumbnails
+ * Home Section
  */
+span.title
+{
+    display:        block;
+    font-size:      23px;
+    border-bottom:  3px solid #eee;
+    padding-bottom: 8px;
+    margin-bottom:  20px;
+    color:          #4c7ed3;
+    font-family:    'Open Sans Condensed', sans-serif;
+}
+
 .thumb
 {
     margin-bottom: 30px;
 }
+
+
 
 /**
  * Footer
@@ -116,40 +132,4 @@ footer
 
     color:            #aaa;
     background-color: #25221e;
-}
-
-
-
-/*    */
-
-span.title
-{
-    display:        block;
-    font-size:      23px;
-    border-bottom:  3px solid #eee;
-    padding-bottom: 8px;
-    margin-bottom:  20px;
-    color:          #4c7ed3;
-    font-family:    'Open Sans Condensed', sans-serif;
-}
-
-.hero-feature
-{
-    margin-bottom: 30px;
-}
-
-.list-group a
-{
-    background: #fbfbfb;
-
-        -ms-transition: all 100ms ease-in-out 0s;
-       -moz-transition: all 100ms ease-in-out 0s;
-    -webkit-transition: all 100ms ease-in-out 0s;
-         -o-transition: all 100ms ease-in-out 0s;
-            transition: all 100ms ease-in-out 0s;
-}
-
-#products-carousel
-{
-    height: 356px;
 }
