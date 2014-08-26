@@ -9,12 +9,5 @@ angular.module("OnlineStore")
             {
                 $scope.categories = PRODUCT_CATEGORIES;
                 $scope.products   = PRODUCTS;
-
-                $scope.predicate = '';
-
-                $scope.changePredicate = function(category)
-                {
-                    $scope.predicate = category;
-                };
             }
 ]);
