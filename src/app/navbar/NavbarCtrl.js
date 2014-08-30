@@ -3,10 +3,12 @@
 
 angular.module("OnlineStore")
 
-.controller("NavbarCtrl", ["$scope", "$location", function($scope, $location)
+.controller("NavbarCtrl", ["$scope", "$location", "PRODUCT_CATEGORIES", function($scope, $location, PRODUCT_CATEGORIES)
 {
     $scope.isActive = function(view_location)
     {
         return view_location === $location.path();
     };
+
+    $scope.categories = PRODUCT_CATEGORIES;
 }]);
