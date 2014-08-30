@@ -3,10 +3,7 @@
 
 angular.module("OnlineStore")
 
-.controller("HomeCtrl",
-            ["$scope", "PRODUCT_CATEGORIES",
-            function($scope, PRODUCT_CATEGORIES)
-            {
-                $scope.categories = PRODUCT_CATEGORIES;
-            }
-]);
+.controller("HomeCtrl", ["$scope", "PRODUCT_CATEGORIES", function($scope, PRODUCT_CATEGORIES)
+{
+    $scope.categories = PRODUCT_CATEGORIES;
+}]);
