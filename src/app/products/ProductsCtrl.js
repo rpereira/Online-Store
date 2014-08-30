@@ -4,9 +4,10 @@
 angular.module("OnlineStore")
 
 .controller("ProductsCtrl",
-            ["$scope", "PRODUCTS",
-            function($scope, PRODUCTS)
+            ["$scope", "PRODUCTS", "PRODUCT_CATEGORIES",
+            function($scope, PRODUCTS, PRODUCT_CATEGORIES)
             {
                 $scope.products = PRODUCTS;
+                $scope.categories = PRODUCT_CATEGORIES;
             }
 ]);
