@@ -136,9 +136,56 @@ span.title
 
 .thumb
 {
-    margin-bottom: 30px;
+    margin-bottom:  30px;
+    text-align:     center;
 }
 
+
+/**
+ * Products Section
+ */
+div .thumbnail:hover
+{
+    box-shadow: 0 0 10px 2px #f1f1f1;
+}
+
+.product-image
+{
+    display:        block;
+    height:         auto;
+    width:          100%;
+    max-width:      100%;
+    margin-right:   auto;
+    margin-left:    auto;
+}
+
+.thumbnail .caption
+{
+    padding: 9px;
+}
+
+.prod-caption
+{
+    background: #fbfbfb;
+    border-top: 1px solid #ddd;
+}
+
+.prod-caption h4
+{
+    font-size:  16px;
+    height:     40px;
+    overflow:   hidden;
+}
+
+.prod-caption p
+{
+    margin-bottom: 10px;
+}
+
+.btn-group .btn.disabled
+{
+    opacity: 1;
+}
 
 
 /**
