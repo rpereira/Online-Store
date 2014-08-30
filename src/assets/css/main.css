@@ -140,6 +140,12 @@ span.title
     text-align:     center;
 }
 
+.thumb .caption-custom
+{
+    background-color: #428bca !important;
+    padding: 5px;
+}
+
 
 /**
  * Products Section
