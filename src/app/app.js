@@ -16,9 +16,37 @@ angular.module("OnlineStore", ["ngRoute"])
         /**
          * Products
          */
-        .when("/vinhos",
+        .when("/vinho",
         {
-            templateUrl : "products/vinhos.tpl.html"
+            templateUrl : "products/vinho.tpl.html"
+        })
+        .when("/azeite",
+        {
+            templateUrl : "products/azeite.tpl.html"
+        })
+        .when("/queijo",
+        {
+            templateUrl : "products/queijo.tpl.html"
+        })
+        .when("/pao",
+        {
+            templateUrl : "products/pao.tpl.html"
+        })
+        .when("/fumeiro",
+        {
+            templateUrl : "products/fumeiro.tpl.html"
+        })
+        .when("/mel",
+        {
+            templateUrl : "products/mel.tpl.html"
+        })
+        .when("/licor",
+        {
+            templateUrl : "products/licor.tpl.html"
+        })
+        .when("/artesanato",
+        {
+            templateUrl : "products/artesanato.tpl.html"
         })
 
         .otherwise(
@@ -33,7 +61,7 @@ angular.module("OnlineStore", ["ngRoute"])
 .constant("PRODUCT_CATEGORIES",
     [
         {
-            name : "Vinhos"/*,
+            name : "Vinho"/*,
             img  : "http://www.cafeportugal.pt/resources/3/image/amendoamoncorvo002.JPG"*/
         },
         {
@@ -43,10 +71,6 @@ angular.module("OnlineStore", ["ngRoute"])
         {
             name : "Queijo"/*,
             img  : "http://1.bp.blogspot.com/-mPlqP23acfM/UbdinxrHmVI/AAAAAAAAOi4/_JpaTeqXRzM/s1600/FLOR+DA+CARDANHA.jpg"*/
-        },
-        {
-            name : "Pão"/*,
-            img  : "http://2.bp.blogspot.com/-PU5YgNAHeNs/TweJScFDKyI/AAAAAAAADyY/sng5WNQoIJw/s1600/carvi%25C3%25A7ais+p%25C3%25A3o.jpg"*/
         },
         {
             name : "Fumeiro"/*,
@@ -89,18 +113,18 @@ angular.module("OnlineStore", ["ngRoute"])
     /* Azeite */
     {
         category    : "azeite",
-        name        : "Azeite",
+        name        : "Azeite Virgem",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
     {
         category    : "azeite",
-        name        : "Azeite",
+        name        : "Azeite Extra Virgem",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Arte Sabor e Douro"
     },
 
-    /* CHEESE */
+    /* Queijo */
     {
         category    : "queijo",
         name        : "Queijo de Cabra",
