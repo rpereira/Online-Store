@@ -99,6 +99,21 @@ header .logo span
     background-color: #428bca !important;
 }
 
+/* nav dropdown menu */
+.nav ul li a
+{
+    font-family:    Arial;
+    font-size:      15px;
+    color:          #333 !important;
+    text-transform: inherit;
+}
+
+.nav ul li a:hover
+{
+    background-color: #f1f1f1 !important;
+}
+
+
 section
 {
     margin-bottom: 20px;
