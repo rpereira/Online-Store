@@ -43,7 +43,7 @@
 
 
         <!-- navbar -->
-        <nav class="navbar navbar-custom" role="navigation" data-ng-controller="NavbarCtrl">
+        <nav class="navbar navbar-inverse navbar-custom" role="navigation" data-ng-controller="NavbarCtrl">
             <div class="container">
                 <div class="row">
                     <!--nav-header -->
@@ -63,6 +63,16 @@
                             <li data-ng-class="{ active: isActive('/home')}">
                                 <a href="#/home">Home</a>
                             </li>
+
+                            <li class="dropdown">
+                                <a href class="dropdown-toggle" data-toggle="dropdown">Products <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li data-ng-repeat="category in categories">
+                                        <a data-ng-href="#{{ category.name | lowercase }}">{{ category.name }}</a>
+                                    </li>
+                                </ul>
+                            </li>
+
                             <li data-ng-class="{ active: isActive('/about')}">
                                 <a href="#/about">About</a>
                             </li>
@@ -107,6 +117,7 @@
         <!-- controllers -->
         <script src="navbar/NavbarCtrl.js"></script>
         <script src="home/HomeCtrl.js"></script>
+        <script src="products/ProductsCtrl.js"></script>
 
     </body>
 </html>
