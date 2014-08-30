@@ -76,13 +76,13 @@ angular.module("OnlineStore", ["ngRoute"])
     {
         category    : "vinho",
         name        : "Cistus Tinto",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Quinta do Vale da Perdiz – Sociedade Agrícola, Lda."
     },
     {
         category    : "vinho",
         name        : "Cistus Tinto Reserve",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Quinta do Vale da Perdiz – Sociedade Agrícola, Lda."
     },
 
@@ -90,13 +90,13 @@ angular.module("OnlineStore", ["ngRoute"])
     {
         category    : "azeite",
         name        : "Azeite",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
     {
         category    : "azeite",
         name        : "Azeite",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Arte Sabor e Douro"
     },
 
@@ -104,25 +104,25 @@ angular.module("OnlineStore", ["ngRoute"])
     {
         category    : "queijo",
         name        : "Queijo de Cabra",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
     {
         category    : "queijo",
         name        : "Queijo de Cabra Curado",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
     {
         category    : "queijo",
         name        : "Queijo de Ovelha",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
     {
         category    : "queijo",
         name        : "Queijo de Ovelha Curado",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
 
@@ -130,31 +130,31 @@ angular.module("OnlineStore", ["ngRoute"])
     {
         category    : "fumeiro",
         name        : "Alheira",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
     {
         category    : "fumeiro",
         name        : "Alheira Salpicão",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Arte Sabor e Douro"
     },
     {
         category    : "fumeiro",
         name        : "Alheira Bacalhau",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Arte Sabor e Douro"
     },
     {
         category    : "fumeiro",
         name        : "Presunto",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Arte Sabor e Douro"
     },
     {
         category    : "fumeiro",
         name        : "Presunto Curado",
-        description : "bla bla bla",
+        description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Arte Sabor e Douro"
     }
 ]);
