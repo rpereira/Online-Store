@@ -12,6 +12,15 @@ angular.module("OnlineStore", ["ngRoute"])
         {
             templateUrl : "home/home.tpl.html"
         })
+
+        /**
+         * Products
+         */
+        .when("/vinhos",
+        {
+            templateUrl : "products/vinhos.tpl.html"
+        })
+
         .otherwise(
         {
             redirectTo: "/home"
