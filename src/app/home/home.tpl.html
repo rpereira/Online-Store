@@ -7,16 +7,29 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb"
-                 data-ng-repeat="category in categories">
-                <a class="thumbnail" data-ng-href="#{{ category.name | lowercase }}">
+            <!--<div class="col-lg-3 col-md-4 col-xs-6 grid caption-style"
+                 data-ng-repeat="category in categories">-->
+            <ul class="grid caption-style">
+                <li data-ng-repeat="category in categories">
+                <figure>
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <figcaption>
+                        <h4>{{ category.name }}</h4>
+                        <span>Breve descrição</span>
+                        <a data-ng-href="#{{ category.name | lowercase }}">Ver produto</a>
+
+                    </figcaption>
+                </figure>
+                </li>
+            </ul>
+                <!--<a class="thumbnail" data-ng-href="#{{ category.name | lowercase }}">
                     <img class="img-responsive" src="http://placehold.it/400x300" alt="">
                     <div class="caption caption-custom">
                         <h4>{{ category.name }}</h4>
                     </div>
-                </a>
+                </a>-->
             </div>
-        </div>
+        <!--</div>-->
 
     </div>
     <!-- /.Categories -->
