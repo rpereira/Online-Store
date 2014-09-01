@@ -136,6 +136,12 @@ span.title
     font-family:    'Open Sans Condensed', sans-serif;
 }
 
+.thumb
+{
+    margin-bottom:  30px;
+    text-align:     center;
+}
+
 /* Caption Style */
 .grid
 {
