@@ -10,7 +10,7 @@ angular.module("OnlineStore", ["ngRoute"])
     $routeProvider
         .when("/home",
         {
-            templateUrl : "home/home.tpl.html"
+            templateUrl : "app/home/home.tpl.html"
         })
 
         /**
@@ -18,35 +18,35 @@ angular.module("OnlineStore", ["ngRoute"])
          */
         .when("/vinho",
         {
-            templateUrl : "products/vinho.tpl.html"
+            templateUrl : "app/products/vinho.tpl.html"
         })
         .when("/azeite",
         {
-            templateUrl : "products/azeite.tpl.html"
+            templateUrl : "app/products/azeite.tpl.html"
         })
         .when("/queijo",
         {
-            templateUrl : "products/queijo.tpl.html"
+            templateUrl : "app/products/queijo.tpl.html"
         })
         .when("/pao",
         {
-            templateUrl : "products/pao.tpl.html"
+            templateUrl : "app/products/pao.tpl.html"
         })
         .when("/fumeiro",
         {
-            templateUrl : "products/fumeiro.tpl.html"
+            templateUrl : "app/products/fumeiro.tpl.html"
         })
         .when("/mel",
         {
-            templateUrl : "products/mel.tpl.html"
+            templateUrl : "app/products/mel.tpl.html"
         })
         .when("/licor",
         {
-            templateUrl : "products/licor.tpl.html"
+            templateUrl : "app/products/licor.tpl.html"
         })
         .when("/artesanato",
         {
-            templateUrl : "products/artesanato.tpl.html"
+            templateUrl : "app/products/artesanato.tpl.html"
         })
 
         .otherwise(
