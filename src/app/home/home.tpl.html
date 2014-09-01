@@ -11,15 +11,15 @@
                  data-ng-repeat="category in categories">-->
             <ul class="grid caption-style">
                 <li data-ng-repeat="category in categories">
-                <figure>
-                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                    <figcaption>
-                        <h4>{{ category.name }}</h4>
-                        <span>Breve descrição</span>
-                        <a data-ng-href="#{{ category.name | lowercase }}">Ver produto</a>
+                    <figure>
+                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                        <figcaption>
+                            <h4>{{ category.name }}</h4>
+                            <span>Breve descrição</span>
+                            <a data-ng-href="#{{ category.name | lowercase }}">Ver produto</a>
 
-                    </figcaption>
-                </figure>
+                        </figcaption>
+                    </figure>
                 </li>
             </ul>
                 <!--<a class="thumbnail" data-ng-href="#{{ category.name | lowercase }}">
