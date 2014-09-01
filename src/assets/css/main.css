@@ -329,6 +329,27 @@ div .thumbnail:hover
     color:      #428bca;
 }
 
+/**
+ * Details
+ */
+.sp-wrap
+{
+    display: inline-block;
+    line-height: 0;
+    font-size: 0;
+    background: #eee;
+    position: relative;
+    margin: 0 25px 15px 0;
+    border: 1px solid #E4E4E4;
+    float: left;
+}
+
+.sp-large
+{
+    position: relative;
+    overflow: hidden;
+}
+
 
 /**
  * Footer
