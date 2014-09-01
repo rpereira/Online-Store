@@ -43,19 +43,21 @@ header
 header .well
 {
     -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -ms-box-shadow: none;
-    -o-box-shadow: none;
-    box-shadow: none;
-    padding: 0;
+       -moz-box-shadow: none;
+        -ms-box-shadow: none;
+         -o-box-shadow: none;
+
+    box-shadow:  none;
+    padding:     0;
+    border:      0;
     padding-top: 20px;
-    border: 0;
+
     background: transparent;
 }
 
 header .logo span
 {
-    color: #333;
+    color:     #333;
     font-size: 35px;
 }
 
@@ -191,6 +193,25 @@ div .thumbnail:hover
 .btn-group .btn.disabled
 {
     opacity: 1;
+}
+
+/** categories list-group **/
+.list-categ a
+{
+    /*font-family: 'DroidSansRegular';*/
+    background:  #fbfbfb;
+
+        -ms-transition: all 100ms ease-in-out 0s ;
+       -moz-transition: all 100ms ease-in-out 0s ;
+    -webkit-transition: all 100ms ease-in-out 0s ;
+         -o-transition: all 100ms ease-in-out 0s ;
+            transition: all 100ms ease-in-out 0s ;
+}
+
+.list-categ a:hover
+{
+    background: #fff;
+    color:      #428bca;
 }
 
 
