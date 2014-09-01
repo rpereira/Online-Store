@@ -43,19 +43,21 @@ header
 header .well
 {
     -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -ms-box-shadow: none;
-    -o-box-shadow: none;
-    box-shadow: none;
-    padding: 0;
+       -moz-box-shadow: none;
+        -ms-box-shadow: none;
+         -o-box-shadow: none;
+
+    box-shadow:  none;
+    padding:     0;
+    border:      0;
     padding-top: 20px;
-    border: 0;
+
     background: transparent;
 }
 
 header .logo span
 {
-    color: #333;
+    color:     #333;
     font-size: 35px;
 }
 
@@ -134,16 +136,131 @@ span.title
     font-family:    'Open Sans Condensed', sans-serif;
 }
 
-.thumb
+/*.thumb
 {
     margin-bottom:  30px;
     text-align:     center;
+}*/
+
+
+/* Caption Style */
+.grid
+{
+    padding: 20px 20px 100px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
 }
 
-.thumb .caption-custom
+.grid li
 {
-    background-color: #428bca !important;
-    padding: 5px;
+    display: inline-block;
+    width: 440px;
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.grid figure
+{
+    margin: 0;
+    position: relative;
+}
+
+.grid figure img
+{
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+.grid figcaption
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: #2e4c64;
+    color: #ddd13e;
+}
+
+.grid figcaption h4
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.grid figcaption a
+{
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #ddd13e;
+    color: #fff;
+}
+
+
+
+.caption-style figure
+{
+    overflow: hidden;
+}
+
+.caption-style figure img
+{
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.caption-style figure:hover img,
+.caption-style figure.cs-hover img
+{
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
+}
+
+.caption-style figcaption
+{
+    height: 100px;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+
+    -webkit-transform: translateY(100%);
+       -moz-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+       -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+            transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.caption-style figure:hover figcaption,
+.caption-style figure.cs-hover figcaption
+{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+    -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+.caption-style figcaption a
+{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 
@@ -191,6 +308,25 @@ div .thumbnail:hover
 .btn-group .btn.disabled
 {
     opacity: 1;
+}
+
+/** categories list-group **/
+.list-categ a
+{
+    /*font-family: 'DroidSansRegular';*/
+    background:  #fbfbfb;
+
+        -ms-transition: all 100ms ease-in-out 0s ;
+       -moz-transition: all 100ms ease-in-out 0s ;
+    -webkit-transition: all 100ms ease-in-out 0s ;
+         -o-transition: all 100ms ease-in-out 0s ;
+            transition: all 100ms ease-in-out 0s ;
+}
+
+.list-categ a:hover
+{
+    background: #fff;
+    color:      #428bca;
 }
 
 
