@@ -8,6 +8,9 @@ angular.module("OnlineStore", ["ngRoute"])
     "use strict";
 
     $routeProvider
+        /**
+         * Home
+         */
         .when("/home",
         {
             templateUrl : "src/app/home/home.tpl.html"
@@ -47,6 +50,14 @@ angular.module("OnlineStore", ["ngRoute"])
         .when("/artesanato",
         {
             templateUrl : "src/app/products/artesanato.tpl.html"
+        })
+
+        /**
+         * Selected product details
+         */
+        .when("/details",
+        {
+            templateUrl : "src/app/products/details.tpl.html"
         })
 
         .otherwise(
