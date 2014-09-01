@@ -146,7 +146,7 @@ span.title
 /* Caption Style */
 .grid
 {
-    padding: 20px 20px 100px 20px;
+    padding: 0px 20px 100px 20px;
     max-width: 1300px;
     margin: 0 auto;
     list-style: none;
@@ -156,7 +156,7 @@ span.title
 .grid li
 {
     display: inline-block;
-    width: 440px;
+    width: 350px;
     margin: 0;
     padding: 20px;
     text-align: left;
@@ -182,7 +182,7 @@ span.title
     top: 0;
     left: 0;
     padding: 20px;
-    background: #2e4c64;
+    background: #4a4a4a;
     color: #ddd13e;
 }
 
