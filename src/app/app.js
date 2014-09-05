@@ -8,53 +8,20 @@ angular.module("OnlineStore", ["ngRoute"])
     "use strict";
 
     $routeProvider
-        /**
-         * Home
-         */
+
+        // Home
         .when("/home",
         {
             templateUrl : "src/app/home/home.tpl.html"
         })
 
-        /**
-         * Products
-         */
-        .when("/vinho",
+        // Products by category
+        .when("/categories/:category_id",
         {
-            templateUrl : "src/app/products/vinho.tpl.html"
-        })
-        .when("/azeite",
-        {
-            templateUrl : "src/app/products/azeite.tpl.html"
-        })
-        .when("/queijo",
-        {
-            templateUrl : "src/app/products/queijo.tpl.html"
-        })
-        .when("/pao",
-        {
-            templateUrl : "src/app/products/pao.tpl.html"
-        })
-        .when("/fumeiro",
-        {
-            templateUrl : "src/app/products/fumeiro.tpl.html"
-        })
-        .when("/mel",
-        {
-            templateUrl : "src/app/products/mel.tpl.html"
-        })
-        .when("/licor",
-        {
-            templateUrl : "src/app/products/licor.tpl.html"
-        })
-        .when("/artesanato",
-        {
-            templateUrl : "src/app/products/artesanato.tpl.html"
+            templateUrl : "src/app/products/category-products.tpl.html"
         })
 
-        /**
-         * Selected product details
-         */
+        // Selected product details
         .when("/details",
         {
             templateUrl : "src/app/products/details.tpl.html"
@@ -72,32 +39,32 @@ angular.module("OnlineStore", ["ngRoute"])
 .constant("PRODUCT_CATEGORIES",
     [
         {
-            name : "Vinho"/*,
-            img  : "http://www.cafeportugal.pt/resources/3/image/amendoamoncorvo002.JPG"*/
+            name : "Vinho",
+            id   : "vinho"
         },
         {
-            name : "Azeite"/*,
-            img  : "/src/assets/img/home/azeite.jpg"*/
+            name : "Azeite",
+            id   : "azeite"
         },
         {
-            name : "Queijo"/*,
-            img  : "http://1.bp.blogspot.com/-mPlqP23acfM/UbdinxrHmVI/AAAAAAAAOi4/_JpaTeqXRzM/s1600/FLOR+DA+CARDANHA.jpg"*/
+            name : "Queijo",
+            id   : "queijo"
         },
         {
-            name : "Fumeiro"/*,
-            img  : "http://jornal.netbila.net/images/stories/imagens/2011/gastronomia/o_que_se_come/alheiras.jpg"*/
+            name : "Fumeiro",
+            id   : "fumeiro"
         },
         {
-            name : "Mel"/*,
-            img  : "http://www.mulhernamoda.com/wp-content/uploads/2013/09/beneficios-do-mel_02.jpg"*/
+            name : "Mel",
+            id   : "mel"
         },
         {
-            name : "Licor"/*,
-            img  : "http://armazemdabebida.com.br/loja/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/l/i/licor-43-1.jpg"*/
+            name : "Licor",
+            id   : "licor"
         },
         {
-            name : "Artesanato"/*,
-            img  : "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQK8K_ZYecOKyb4RILtuTk034jFQGLHFKWyxnjnSD6mURmr7Nhjpg"*/
+            name : "Artesanato",
+            id   : "artesanato"
         }
     ]
 )
@@ -109,13 +76,13 @@ angular.module("OnlineStore", ["ngRoute"])
 
     /* Vinhos */
     {
-        category    : "vinho",
+        id          : "vinho",
         name        : "Cistus Tinto",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Quinta do Vale da Perdiz – Sociedade Agrícola, Lda."
     },
     {
-        category    : "vinho",
+        id          : "vinho",
         name        : "Cistus Tinto Reserve",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Quinta do Vale da Perdiz – Sociedade Agrícola, Lda."
@@ -123,13 +90,13 @@ angular.module("OnlineStore", ["ngRoute"])
 
     /* Azeite */
     {
-        category    : "azeite",
+        id          : "azeite",
         name        : "Azeite Virgem",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
     {
-        category    : "azeite",
+        id          : "azeite",
         name        : "Azeite Extra Virgem",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Arte Sabor e Douro"
@@ -137,25 +104,25 @@ angular.module("OnlineStore", ["ngRoute"])
 
     /* Queijo */
     {
-        category    : "queijo",
+        id          : "queijo",
         name        : "Queijo de Cabra",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
     {
-        category    : "queijo",
+        id          : "queijo",
         name        : "Queijo de Cabra Curado",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
     {
-        category    : "queijo",
+        id          : "queijo",
         name        : "Queijo de Ovelha",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
     {
-        category    : "queijo",
+        id          : "queijo",
         name        : "Queijo de Ovelha Curado",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
@@ -163,31 +130,31 @@ angular.module("OnlineStore", ["ngRoute"])
 
     /* FUMEIRO */
     {
-        category    : "fumeiro",
+        id          : "fumeiro",
         name        : "Alheira",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Bazar Regional"
     },
     {
-        category    : "fumeiro",
+        id          : "fumeiro",
         name        : "Alheira Salpicão",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Arte Sabor e Douro"
     },
     {
-        category    : "fumeiro",
+        id          : "fumeiro",
         name        : "Alheira Bacalhau",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Arte Sabor e Douro"
     },
     {
-        category    : "fumeiro",
+        id          : "fumeiro",
         name        : "Presunto",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Arte Sabor e Douro"
     },
     {
-        category    : "fumeiro",
+        id          : "fumeiro",
         name        : "Presunto Curado",
         description : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
         retailer    : "Arte Sabor e Douro"
