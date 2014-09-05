@@ -1,5 +1,5 @@
 
-<section class="row" data-ng-controller="HomeCtrl">
+<section class="row" data-ng-controller="HomeController">
     <!-- Categories -->
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="no-padding">
@@ -16,7 +16,7 @@
                         <figcaption>
                             <h4>{{ category.name }}</h4>
                             <span>Breve descrição</span>
-                            <a data-ng-href="#{{ category.name | lowercase }}">Ver produto</a>
+                            <a href="#/categories/{{category.id}}">Ver produto</a>
 
                         </figcaption>
                     </figure>
