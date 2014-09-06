@@ -38,7 +38,7 @@
                             <img class="img-responsive" src="http://placehold.it/400x300" alt="">
                         </a>
                         <div class="caption prod-caption">
-                            <h4><a href="#/categories/{{category_id}}/{{product.id}}">{{ product.name }}</a></h4>
+                            <h4><a href="#/categories/{{category_id}}/{{product.name | hyphen | lowercase}}">{{ product.name }}</a></h4>
                             <p>{{ product.description }}</p>
                             <p>
                                 <div class="btn-group">
