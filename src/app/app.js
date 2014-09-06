@@ -1,7 +1,7 @@
 /*jslint browser: true, devel: true, nomen: true, plusplus: true, vars: true, white: true */
 /*global angular*/
 
-angular.module("OnlineStore", ["ngRoute"])
+angular.module("OnlineStore", ["ngRoute", "ngResource"])
 
 .config(["$routeProvider", function($routeProvider)
 {
@@ -22,7 +22,7 @@ angular.module("OnlineStore", ["ngRoute"])
         })
 
         // Selected product details
-        .when("/details",
+        .when("/categories/:category_id/:product_id",
         {
             templateUrl : "src/app/products/details.tpl.html"
         })
