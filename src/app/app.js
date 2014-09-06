@@ -10,7 +10,7 @@ angular.module("OnlineStore", ["ngRoute", "ngResource"])
     $routeProvider
 
         // Home
-        .when("/home",
+        .when("/",
         {
             templateUrl : "src/app/home/home.tpl.html"
         })
@@ -27,9 +27,10 @@ angular.module("OnlineStore", ["ngRoute", "ngResource"])
             templateUrl : "src/app/products/details.tpl.html"
         })
 
+        // redirect to home
         .otherwise(
         {
-            redirectTo: "/home"
+            redirectTo: "/"
         });
 }])
 
