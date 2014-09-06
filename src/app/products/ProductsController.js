@@ -4,13 +4,11 @@
 angular.module("OnlineStore")
 
 .controller("ProductsController",
-            ["$scope", "$routeParams", "PRODUCT_CATEGORIES", "PRODUCTS", "$http",
-            function($scope, $routeParams, PRODUCT_CATEGORIES, PRODUCTS, $http)
+            ["$scope", "$routeParams", "PRODUCT_CATEGORIES", "PRODUCTS",
+            function($scope, $routeParams, PRODUCT_CATEGORIES, PRODUCTS)
             {
                 $scope.category_id = $routeParams.category_id;
                 $scope.categories  = PRODUCT_CATEGORIES;
-                //$scope.products    = PRODUCTS;
-
-                $http.get("data/cistus.json").success(function(data) { $scope.products = data; }).error(function(err){ alert(err);});
+                $scope.products    = PRODUCTS;
             }
 ]);
