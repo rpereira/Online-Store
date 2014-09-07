@@ -7,7 +7,7 @@
  * JUST FOR TESTING PURPOSES.
  */
 
-angular.module("OnlineStore", ["ngRoute"])
+angular.module("OnlineStore")
 
 /**
  * Products categories list.
