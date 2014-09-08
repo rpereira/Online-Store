@@ -1,0 +1,14 @@
+[
+    {
+        "id"          : "vinho",
+        "name"        : "Cistus Tinto",
+        "snippet"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
+        "retailer"    : "Quinta do Vale da Perdiz – Sociedade Agrícola, Lda."
+    },
+    {
+        "id"          : "vinho",
+        "name"        : "Cistus Tinto Reserve",
+        "snippet"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
+        "retailer"    : "Quinta do Vale da Perdiz – Sociedade Agrícola, Lda."
+    }
+]

@@ -4,11 +4,17 @@
 angular.module("OnlineStore")
 
 .controller("ProductsController",
-            ["$scope", "$routeParams", "PRODUCT_CATEGORIES", "PRODUCTS",
-            function($scope, $routeParams, PRODUCT_CATEGORIES, PRODUCTS)
+            ["$scope", "$routeParams", "$http", "PRODUCT_CATEGORIES",
+            function($scope, $routeParams, $http, PRODUCT_CATEGORIES)
             {
                 $scope.category_id = $routeParams.category_id;
                 $scope.categories  = PRODUCT_CATEGORIES;
-                $scope.products    = PRODUCTS;
+
+                $http
+                    .get("products/" + $scope.category_id + ".json")
+                    .then(function(res)
+                    {
+                        $scope.products = res.data;
+                    });
             }
 ]);
