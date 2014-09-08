@@ -1,0 +1,32 @@
+[
+    {
+        "id"          : "fumeiro",
+        "name"        : "Alheira",
+        "snippet"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
+        "retailer"    : "Bazar Regional"
+    },
+    {
+        "id"          : "fumeiro",
+        "name"        : "Alheira Salpicão",
+        "snippet"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
+        "retailer"    : "Arte Sabor e Douro"
+    },
+    {
+        "id"          : "fumeiro",
+        "name"        : "Alheira Bacalhau",
+        "snippet"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
+        "retailer"    : "Arte Sabor e Douro"
+    },
+    {
+        "id"          : "fumeiro",
+        "name"        : "Presunto",
+        "snippet"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
+        "retailer"    : "Arte Sabor e Douro"
+    },
+    {
+        "id"          : "fumeiro",
+        "name"        : "Presunto Curado",
+        "snippet"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
+        "retailer"    : "Arte Sabor e Douro"
+    }
+]

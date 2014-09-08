@@ -1,0 +1,26 @@
+[
+    {
+        "id"          : "queijo",
+        "name"        : "Queijo de Cabra",
+        "snippet"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
+        "retailer"    : "Bazar Regional"
+    },
+    {
+        "id"          : "queijo",
+        "name"        : "Queijo de Cabra Curado",
+        "snippet"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
+        "retailer"    : "Bazar Regional"
+    },
+    {
+        "id"          : "queijo",
+        "name"        : "Queijo de Ovelha",
+        "snippet"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
+        "retailer"    : "Bazar Regional"
+    },
+    {
+        "id"          : "queijo",
+        "name"        : "Queijo de Ovelha Curado",
+        "snippet"     : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, minima!",
+        "retailer"    : "Bazar Regional"
+    }
+]
