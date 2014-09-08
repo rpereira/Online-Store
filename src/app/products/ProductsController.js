@@ -11,7 +11,7 @@ angular.module("OnlineStore")
                 $scope.categories  = PRODUCT_CATEGORIES;
 
                 $http
-                    .get("products/" + $scope.category_id + ".json")
+                    .get("products/" + $scope.category_id + ".json", { cache: true })
                     .then(function(res)
                     {
                         $scope.products = res.data;
