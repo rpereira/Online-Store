@@ -1,4 +1,24 @@
 <div data-ng-controller="DetailsController">
     <span>{{ product_id }}</span>
     <span>{{ product }}</span>
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="no-padding">
+            <span class="title">{{ product.name }}</span>
+        </div>
+
+        <div class="col-lg-12 col-sm-12 hero-feature">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </div>
+            </div>
+
+            <h4>Live Nation 3 Days of Peace and Music Carbon</h4>
+            <hr>
+            <p>{{ product.snippet }}</p>
+            <hr>
+            <h3>$428.96</h3>
+        </div>
+    </div>
 </div>
