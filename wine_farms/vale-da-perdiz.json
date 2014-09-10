@@ -1,0 +1,19 @@
+{
+    "name"    : "Quinta do Vale da Perdiz – Sociedade Agrícola, Lda.",
+    "address" :
+    {
+        "street"      : "Quinta da Ferreira",
+        "postal_code" : "5160 – 284 Torre de Moncorvo",
+        "county"      : "Torre de Moncorvo"
+    },
+    "access"        : "De Torre de Moncorvo>Largo de Santo António->Saída para sul, seguir indicação das sinalética de parapente. Encontra-se localizada em frente à casa do Guarda Florestal.",
+    "gps_coords"    : "41.17303 -7.04165",
+    "opening_hours" : "08H30 / 12H30  - 13H30 / 17H30 Excepto Fins de Semana",
+    "contact"       :
+    {
+        "name"  : "António Fernandes",
+        "phone" : "(+351) 279 252 077",
+        "email" : "afernandes@qvp.pt"
+    },
+    "overvie" : "A “Quinta do Vale da Perdiz – Sociedade Agrícola, Lda.” é uma empresa familiar que aposta no binómio qualidade/preço com o objectivo de fazer chegar aos consumidores vinhos de qualidade a preços atractivos. O sócio fundador – António Augusto Fernandes – dedicou a vida à vinha e aos vinhos tendo iniciado a produção de vinhos generosos e de mesa no ano de 1989. Constituída em Junho de 2000 com o objectivo de desenvolver a vertente dos vinhos de mesa apostando na melhoria dos métodos e técnicas de vinificação, a empresa vinifica na Quinta do Reboredo, em Torre de Moncorvo. Todos os vinhos da Quinta do Vale da Perdiz – comercializados sob a marca “Cistus” – são produzidos a partir de uvas do Douro Superior, sendo na sua maioria provenientes das vinhas da família Fernandes, detentora da sociedade, com uma área total aproximada de 50 hectares repartidos por seis quintas ( Quinta do Vale da Perdiz, Quinta do Vale da Pia, Quinta da Vergeira, Quinta das Chãs, Quinta da Ponte de Pau e Quinta do Reboredo)."
+}
