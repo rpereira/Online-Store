@@ -15,6 +15,12 @@ angular.module("OnlineStore", ["ngRoute"])
             templateUrl : "src/app/home/home.tpl.html"
         })
 
+        // Wine farms
+        .when("/wine_farms/:farm_id",
+        {
+            templateUrl : "src/app/wine_farms/farm.tpl.html"
+        })
+
         // Products by category
         .when("/categories/:category_id",
         {
