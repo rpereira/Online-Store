@@ -1,3 +1,87 @@
-<div data-ng-controller="FarmController">
-    {{ farm.name }}
-</div>
+<section class="row" data-ng-controller="FarmController">
+    <!-- content -->
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <!-- title -->
+        <div class="no-padding">
+            <span class="title">{{ farm.name }}</span>
+        </div>
+        <!-- /.title -->
+
+        <div class="row hero-feature">
+            <!-- farm image -->
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                </div>
+            </div>
+            <!-- /.farm image -->
+
+            <!-- farm details -->
+            <div class="col-sm-6 col-md-8 feature">
+                <!-- address -->
+                <div class="col-md-6 col-sm-6">
+                    <span class="sub-header"><i class="fa fa-building-o"></i> Address</span>
+                    <ul class="list-unstyled">
+                        <li><strong>Street:</strong> {{ farm.address.street }}</li>
+                        <li><strong>Postal code:</strong> {{ farm.address.postal_code }}</li>
+                        <li><strong>County:</strong> {{ farm.address.county }}</li>
+                    </ul>
+                </div>
+                <!-- /.address -->
+
+                <!-- contact -->
+                <div class="col-md-6 col-sm-6 feature">
+                    <span class="sub-header"><i class="fa fa-phone"></i> Contact</span>
+                    <ul class="list-unstyled">
+                        <li><strong>Name:</strong> {{ farm.contact.name }}</li>
+                        <li><strong>Phone:</strong> {{ farm.contact.phone }}</li>
+                        <li><strong>Email:</strong> {{ farm.contact.email }}</li>
+                    </ul>
+                </div>
+                <!-- /.contact -->
+
+                <!-- directions -->
+                <div class="col-md-6 col-sm-6">
+                    <span class="sub-header"><i class="fa fa-location-arrow"></i> Directions</span>
+                    <ul class="list-unstyled">
+                        <li><strong>GPS coords:</strong> {{ farm.gps_coords }}</li>
+                        <li><strong>Directions:</strong> {{ farm.directions }}</li>
+                    </ul>
+                </div>
+                <!-- /.directions -->
+
+                <!-- opening hours -->
+                <div class="col-md-6 col-sm-6">
+                    <span class="sub-header"><i class="fa fa-clock-o"></i> Opening hours</span>
+                    <ul class="list-unstyled">
+                        <li><strong>Week days:</strong> {{ farm.opening_hours.weekdays }}</li>
+                        <li><strong>Weekend:</strong> {{ farm.opening_hours.weekends }}</li>
+                    </ul>
+                </div>
+                <!-- /.opening hours -->
+            </div>
+            <!-- farm details -->
+        </div>
+
+        <!-- overview -->
+        <div class="row hero-feature">
+            <div class="col-md-12 col-sm-12">
+                <span class="sub-header"><i class="fa fa-info"></i> Overview</span>
+                <p>{{ farm.overview }}</p>
+            </div>
+        </div>
+        <!-- /.overview -->
+
+        <!-- location -->
+        <div class="row hero-feature">
+            <div class="col-md-12 col-sm-12">
+                <span class="sub-header"><i class="fa fa-map-marker"></i> Location</span>
+                <div class="Flexible-container">
+                    <iframe height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12012.942572419965!2d-7.041638900000001!3d41.1730273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDEwJzIyLjkiTiA3wrAwMicyOS45Ilc!5e0!3m2!1spt-PT!2spt!4v1410367552360"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- /.location -->
+    </div>
+    <!-- /.content -->
+</section>
